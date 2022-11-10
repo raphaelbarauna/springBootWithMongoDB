@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "2a0e0cf6-df14-4206-9f54-9e1c226124a6",
+		"name": "EcoreCoding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7469342"
+	},
+	"item": [
+		{
+			"name": "Save new Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign a role to a team member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save new Membership",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"fd282131-d8aa-4819-b0c8-d9e0bfb1b75c\",\r\n    \"teamId\": \"7676a4bf-adfe-415c-941b-1739af07039b\",\r\n    \"roleId\": \"124aas1233\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/membership",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"membership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Look up memberships for a role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"membershipIds\": [\"714a9710-b069-4d06-a72c-f1cef3593d99\", \"224a0b9a-5f39-41b6-9ca7-c35ce1942014\"],\r\n    \"roleId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/membership/role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"membership",
+						"role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Look up a role for a membership",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"fd282131-d8aa-4819-b0c8-d9e0bfb1b75c\",\r\n    \"teamId\": \"7676a4bf-adfe-415c-941b-1739af07039b\",\r\n    \"roleId\": \"5847isdfahd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/membership/21a3e7de-5656-4749-95e6-a1fba10f674e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"membership",
+						"21a3e7de-5656-4749-95e6-a1fba10f674e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/roles/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"roles",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Memberships",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/membership/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"membership",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
